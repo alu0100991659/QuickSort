@@ -1,2 +1,2 @@
-# QuickSortF
-Fragmento del conocido algoritmo
+# Practica 6: Integración continua
+Código de la práctica
