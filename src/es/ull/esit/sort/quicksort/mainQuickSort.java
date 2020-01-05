@@ -4,8 +4,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import es.ull.esit.sort.quicksort.Quicksort;
 
+/// Clase que contiene el main del programa
 public class mainQuickSort {
 	
+	/// Main del programa
 	public static void main(String[] args) {
 		
 		try {

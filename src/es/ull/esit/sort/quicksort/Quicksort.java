@@ -2,12 +2,13 @@ package es.ull.esit.sort.quicksort;
 
 import java.util.Arrays;
 
-
+/// Clase para ordenar mediante el método Quicksory
 public class Quicksort  {
 	
-	private int[] numbers;
-	private int number;
+	private int[] numbers; /*!< Array a ordenar */
+	private int number; /*!< Numero pivote de la ordenacion */
 	
+	/// Método principal de la ordenación
 	public void sort(int[] values) {
 		
 		// Check for empty or null array
@@ -21,6 +22,7 @@ public class Quicksort  {
 
 	}
 
+	/// Parte recursiva del algoritmo
 	private void quicksort(int low, int high) {
 
 		int i = low, j = high;
@@ -67,6 +69,7 @@ public class Quicksort  {
 			quicksort(i, high);
 	}
 
+	/// Método para intercambiar la posición de dos elementos
 	private void exchange(int i, int j) {
 
 		int temp = numbers[i];
@@ -74,6 +77,7 @@ public class Quicksort  {
 		numbers[j] = temp;
 	}
 	
+	/// Método para imprimir el array ordenado
 	public void write() {
 		System.out.println(Arrays.toString(numbers));
 	}
