@@ -1,3 +1,6 @@
+package es.ull.esit.sort.quicksort;
+
+import java.util.Arrays;
 
 
 public class Quicksort  {
@@ -69,5 +72,9 @@ public class Quicksort  {
 		int temp = numbers[i];
 		numbers[i] = numbers[j];
 		numbers[j] = temp;
+	}
+	
+	public void write() {
+		System.out.println(Arrays.toString(numbers));
 	}
 }
